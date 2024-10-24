@@ -138,17 +138,67 @@ async def start_pm(client, message: Message, _):
 
 
 
-
-@app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
-async def start_gp(client, message: Message, _):
-    out = start_panel(_)
-    uptime = int(time.time() - _boot_)
-    await message.reply_photo(
-        photo=config.START_IMG_URL,
-        caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
-        reply_markup=InlineKeyboardMarkup(out),
-    )
+async def start_pm(client, message: Message, _):
+    await add_served_user(message.from_user.id)
+
+    try:
+        out = music_start_panel(_)
+        uttam = await message.reply_text(f"ᴅιиg ᴅσиg ꨄ︎❣️.....")
+        await uttam.edit_text(f"ᴅιиg ᴅσиg ꨄ︎.❣️....")
+        await uttam.edit_text(f"ᴅιиg ᴅσиg ꨄ︎..❣️...")
+        await uttam.edit_text(f"ᴅιиg ᴅσиg ꨄ︎...❣️..")
+        await uttam.edit_text(f"ᴅιиg ᴅσиg ꨄ︎....❣️.")
+        await uttam.edit_text(f"ᴅιиg ᴅσиg ꨄ︎.....❣️")
+
+        await uttam.delete()
+        uttams = await message.reply_text("⚡ѕ")
+        await asyncio.sleep(0.1)
+        await uttams.edit_text("⚡ѕт")
+        await uttams.edit_text("⚡ѕтα")
+        await uttams.edit_text("⚡ѕтαя")
+        await uttams.edit_text("⚡ѕтαят")
+        await uttams.edit_text("⚡ѕтαятι")
+        await uttams.edit_text("⚡ѕтαятιи")
+        await uttams.edit_text("⚡ѕтαятιиg")
+        await uttams.edit_text("⚡ѕтαятιиg.")
+        await asyncio.sleep(0.1)
+        await uttams.edit_text("⚡ѕтαятιиg....")
+        await asyncio.sleep(0.1)
+        await uttams.edit_text("⚡ѕтαятιиg.")
+        await asyncio.sleep(0.1)
+        await uttams.edit_text("⚡ѕтαятιиg....")
+
+        if message.chat.photo:
+            userss_photo = await app.download_media(
+                message.chat.photo.big_file_id,
+            )
+
+    except Exception as e:
+        print(f"Error while handling start command: {e}")
+
+    # Continue with the existing logic after typing effect
+    if len(message.text.split()) > 1:
+        name = message.text.split(None, 1)[1]
+        # Existing logic for different commands...
+
+    else:
+        out = private_panel(_)
+        await message.reply_photo(
+            photo=config.START_IMG_URL,
+            caption=_["start_2"].format(message.from_user.mention, app.mention),
+            reply_markup=InlineKeyboardMarkup(out),
+        )
+        if await is_on_off(2):
+            return await app.send_message(
+                chat_id=config.LOGGER_ID,
+                text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+            )
+
+# Rest of the code remains the same...
+
+)
     return await add_served_chat(message.chat.id)
 
 
