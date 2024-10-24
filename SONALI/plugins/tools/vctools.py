@@ -19,13 +19,13 @@ from telethon.tl.functions.phone import (
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-    await msg.reply("**⌯ ◉ 𝗩𝗖 𝗦𝗧𝗔𝗥𝗧𝗘𝗗 ◉ ⌯**")
+    await msg.reply("**⌯ ◉ 🥰𝚟𝚌 𝚜𝚝𝚊𝚛𝚝 𝚑𝚘 𝙶𝚊𝚢𝚊 𝚋𝚊𝚋𝚢🤩 ◉ ⌯**")
 
 
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-    await msg.reply("**⌯ ◉ 𝗩𝗖 𝗘𝗡𝗗𝗘𝗗 ◉ ⌯**")
+    await msg.reply("**⌯ ◉ 😒𝚟𝚌 𝚘𝚏𝚏 𝚑𝚘 𝚐𝚊𝚢𝚊😫 ◉ ⌯**")
 
 
 # invite members on vc
@@ -49,7 +49,7 @@ async def brah3(app: app, message: Message):
             reply_text,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="๏ ᴊᴏɪɴ ᴠᴄ ๏", url=add_link)],
+                    [InlineKeyboardButton(text="๏ 𝚟𝚌 𝚊𝚊 😒 ๏", url=add_link)],
                 ]
             ),
         )
