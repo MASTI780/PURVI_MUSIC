@@ -198,7 +198,7 @@ async def start_pm(client, message: Message, _):
 
 # Rest of the code remains the same...
 
-)
+')'
     return await add_served_chat(message.chat.id)
 
 
