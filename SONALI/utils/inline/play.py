@@ -43,24 +43,24 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     if 0 < umm <= 10:
         bar = "▰▱▱▱▱▱▱▱▱▱"
     elif 10 < umm < 20:
-        bar = "▰▰▱▱▱▱▱▱▱"
+        bar = "▰▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 30:
-        bar = "▰▰▰▱▱▱▱▱▱"
+        bar = "▰▰▰▱▱▱▱▱▱▱"
     elif 30 <= umm < 40:
-        bar = "▰▰▰▰▱▱▱▱▱"
+        bar = "▰▰▰▰▱▱▱▱▱▱"
     elif 40 <= umm < 50:
-        bar = "▰▰▰▰▰▱▱▱▱"
+        bar = "▰▰▰▰▰▱▱▱▱▱"
     elif 50 <= umm < 60:
-        bar = "▰▰▰▰▰▰▱▱▱"
+        bar = "▰▰▰▰▰▰▱▱▱▱"
     elif 60 <= umm < 70:
-        bar = "▰▰▰▰▰▰▰▱ɱ▱"
+        bar = "▰▰▰▰▰▰▰▱▱▱"
     elif 70 <= umm < 80:
-        bar = "▰▰▰▰▰▰▰▰▱"
+        bar = "▰▰▰▰▰▰▰▰▱▱"
     elif 80 <= umm < 95:
-        bar = "▰▰▰▰▰▰▰▰ᴅ▱"
+        bar = "▰▰▰▰▰▰▰▰▰▱"
     else:
-        bar = "⌯꯭ 𝐁 ꯭ᴧ꯭ ∂ ꯭𝛈 ꯭ᴧ ꯭ɱ꯭ 🥂꯭ 𝗫꯭ ꯭ᴅ"
-        
+        bar = "▰▰▰▰▰▰▰▰▰▰"    
+    
     buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
@@ -77,10 +77,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/Alone_xdllll",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/ll_THUNDER_lll",
             ),
             InlineKeyboardButton(
-                text=" ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/Alone_xdllll",
+                text=" ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+6sKyj7Lma1k2MDFl",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -100,10 +100,10 @@ def stream_markup(_, videoid, chat_id):
          ],
         [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/Alone_xdllll",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/ll_THUNDER_lll",
             ),
             InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/Alone_xdllll",
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+6sKyj7Lma1k2MDFl",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
