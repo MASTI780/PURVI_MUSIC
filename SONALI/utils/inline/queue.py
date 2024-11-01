@@ -1,4 +1,4 @@
-from typing import Union
+/eval from typing import Union
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -66,21 +66,18 @@ def queue_back_markup(_, CPLAY):
 def aq_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="˹ ᴘɾꪮɱꪮᴛιꪮɳ ᴀʋᴀιʅᴀʙʅҽ ˼", callback_data=f"promotext"),
-        ],
-        [
-            InlineKeyboardButton(text="˹ ⚘ sƙιᴘ ᴀɳᴅ ❣ ᴘʅᴀʏ ɳꪮɯ ⚘ ˼", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛҽ ˼", url="https://t.me/BABY09_WORLD",
+                text="ᴛᴇᴀᴍ-ᴘᴜʀᴠɪ 🥀", url=f"https://t.me/ll_THUNDER_lll"
             ),
             InlineKeyboardButton(
-                text="• 𝛅ᴜᴘᴘᴏꝛᴛ •", url="https://t.me/+OL6jdTL7JAJjYzVl",
-            )
+                text="𝖢ʜᴀᴛ 𝖦ʀᴏᴜᴘ 🥀", url=f"https://t.me/+6sKyj7Lma1k2MDFl"
+            ),
         ],
-        [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="𝛓ʟᴏsᴇ"),
-        ]
-    ]
+      ]
     return buttons
