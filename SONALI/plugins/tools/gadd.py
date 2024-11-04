@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-OWNERS = "7400383704"
+OWNERS = "7531575025"
 from SONALI import app
 from SONALI.utils.database import add_served_chat, get_assistant
 
